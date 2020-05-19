@@ -4,7 +4,7 @@ Created on Mon May 18 20:53:22 2020
 
 @author: ChefLiutao
 
-Brain of Lookup Q-learning, e.g. the brain of Q-learning RL agent.
+Brain of Lookup Q-learning, i.e. the brain of Q-learning RL agent.
 """
 import numpy as np
 import pandas as pd 

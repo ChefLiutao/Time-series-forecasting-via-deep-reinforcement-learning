@@ -10,6 +10,8 @@ from DataPreprocessing import normalization
 from DataPreprocessing import build_s_a
 from RDPG_agent import RDPG
 import matplotlib.pyplot as plt
+import os
+
 
 #####################  hyper parameters  ####################
 N_FEATURES = 6
@@ -29,7 +31,7 @@ BATCH_SIZE = 128            #批梯度下降的m
 #############################################################
 
 #Load data 
-data_dir = '\\V6.csv'  #directory of time series data
+data_dir = os.getcwd() + 'V6.csv'  #directory of time series data
 data = pd.read_csv(data_dir,encoding = 'gbk')
 data = data.iloc[:,0]
 
